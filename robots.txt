@@ -1,12 +1,16 @@
 User-agent: *
 Allow: /
 
-# Служебные и технические файлы — не индексировать
-Disallow: /404.html
 Disallow: /*.json$
-Disallow: /*.woff2$
-Disallow: /*.woff$
-Disallow: /*.ttf$
+Disallow: /*.xml$
 
-# Ссылка на карту сайта
-Sitemap: https://dmitriev-urolog.ru/sitemap.xml
+Sitemap: https://sculptorspb.ru/sitemap.xml
+Host: https://sculptorspb.ru
+
+# Основные поисковые системы
+User-agent: Yandex
+Allow: /
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&yclid&gclid
+
+User-agent: Googlebot
+Allow: /
